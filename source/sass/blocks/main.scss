@@ -1,0 +1,43 @@
+.main {
+  background-color: $main-bg;
+}
+
+.main__header {
+  width: 290px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  padding: 25px 15px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main__header {
+    width: 718px;
+    margin-bottom: 32px;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main__header {
+    display: flex;
+    justify-content: space-between;
+    width: 996px;
+    margin-bottom: 8px;
+    padding: 42px 35px 0;
+
+  }
+}
+
+
+.main__title {
+  margin: 0;
+
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+
+

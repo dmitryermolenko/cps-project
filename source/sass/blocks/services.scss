@@ -1,0 +1,23 @@
+
+.services__wrapper {
+  width: 290px;
+  margin: 0 auto 24px;
+  padding: 0 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .services__wrapper {
+    width: 718px;
+    padding: 0 25px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .services__wrapper {
+    width: 996px;
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-bottom: 19px;
+  }
+}

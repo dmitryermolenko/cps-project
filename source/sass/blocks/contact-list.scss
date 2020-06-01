@@ -1,0 +1,31 @@
+.contact-list {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 150px;
+    margin: 0;
+    margin-right: 42px;
+    padding: 0;
+
+    list-style: none;
+  }
+}
+
+.contact-list__link {
+  text-decoration: none;
+}
+
+.contact-list__icon {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
