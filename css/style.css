@@ -122,7 +122,7 @@ img {
   text-decoration: none; }
 
 @media (min-width: 1336px) {
-  .service-list--main .service-list__link {
+  .service-list__link {
     display: flex;
     align-items: center; } }
 
@@ -188,6 +188,20 @@ img {
   font-size: 28px;
   font-weight: bold;
   line-height: 40px; }
+
+.services {
+  min-height: 442px;
+  /*временно*/ }
+
+@media (min-width: 768px) {
+  .services {
+    min-height: 435px;
+    /*временно*/ } }
+
+@media (min-width: 1336px) {
+  .services {
+    min-height: 565px;
+    /*временно*/ } }
 
 .services__wrapper {
   width: 290px;
