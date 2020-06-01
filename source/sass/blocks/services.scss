@@ -1,3 +1,18 @@
+.services {
+  min-height: 442px; /*временно*/
+}
+
+@media (min-width: $tablet-width) {
+  .services {
+    min-height: 435px; /*временно*/
+   }
+}
+
+@media (min-width: $desktop-width) {
+ .services {
+  min-height: 565px; /*временно*/
+ }
+}
 
 .services__wrapper {
   width: 290px;
