@@ -32,7 +32,7 @@ gulp.task("html", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "build/",
+    server: "source/",
     notify: false,
     open: true,
     cors: true,
@@ -42,6 +42,7 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
+
 
 gulp.task("clean", function () {
   return del("build");

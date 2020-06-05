@@ -1,20 +1,14 @@
 .contact-list {
-  display: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 150px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
-@media (min-width: $tablet-width) {
-  .contact-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 150px;
-    margin: 0;
-    margin-right: 42px;
-    padding: 0;
-
-    list-style: none;
-  }
-}
 
 .contact-list__link {
   text-decoration: none;
