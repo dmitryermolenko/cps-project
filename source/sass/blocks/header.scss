@@ -2,11 +2,13 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   width: 290px;
   height: 88px;
   margin: 0 auto;
   padding: 0px 15px;
+  background-color: red;
 }
 
 @media (min-width: $tablet-width) {
@@ -40,6 +42,73 @@
     left: 8%;
   }
 }
+/*
+.header__nav-buttons-wrapper {
+  margin-top: 7px;
+  margin-right: auto;
+
+  &--open {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}*/
+
+.header__nav-toggle-burger {
+  &--open {
+    display: none;
+  }
+}
+
+.header__nav-toggle-cross {
+  display: none;
+
+  &--open {
+    display: flex;
+  }
+}
+
+.header__search-button {
+  display: none;
+
+  &--open {
+    display: flex;
+  }
+}
+
+.header__contact-list {
+  display: none;
+
+  &--open {
+    position: absolute;
+    top: 460px;
+    z-index: 2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header__contact-list {
+    position: absolute;
+    top: 8px;
+    right: 170px;
+    display: flex;
+
+  }
+}
+
+.header__service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 7px;
+  padding: 0;
+  width: 95px;
+
+  &--open {
+    display: none;
+  }
+}
 
 .header__navigation {
   display: none;
@@ -49,14 +118,6 @@
   }
 }
 
-.header__nav-buttons-wrapper {
-  margin-right: auto;
-}
-
-.header__service-list {
-  margin-left: auto;
-  width: 95px;
-}
 
 .header__bottom-wrapper {
   display: none;
@@ -78,20 +139,8 @@
   font-weight: bold;
 }
 
-.header--nav-closed  {
-  & .header__search-button,
-  & .header__contact-list,
-  & .header__nav-toggle--cross {
-    display: none;
-  }
 
-  & .header__nav-buttons-wrapper,
-  & .header__service-list {
-    margin-top: 7px;
-  }
-}
-
-@media (min-width: $tablet-width) {
+/*@media (min-width: $tablet-width) {
   .header--nav-closed {
     & .header__contact-list {
       display: flex;
@@ -99,29 +148,10 @@
       margin-right: 50px;
     }
   }
-}
+}*/
 
 .header--nav-open {
-  & .header__nav-toggle--burger,
-  & .header__service-list {
-    display: none;
-  }
 
-  & .header__contact-list {
-    position: absolute;
-    top: 460px;
-    z-index: 2;
-  }
-
-  & .header__nav-toggle--cross {
-    display: flex;
-  }
-
-  & .header__nav-buttons-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
 
   & .header__bottom-wrapper {
     position: absolute;
@@ -167,7 +197,7 @@
 @media (min-width: $desktop-width) {
   .header--desktop {
     & .header__nav-toggle--burger,
-    & .header__nav-toggle--cross,
+    & .header__nav-toggle-cross,
     & .header__service-list {
       display: none;
     }
