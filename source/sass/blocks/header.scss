@@ -8,7 +8,7 @@
   height: 88px;
   margin: 0 auto;
   padding: 0px 15px;
-  background-color: red;
+  /*background-color: red;*/
 }
 
 @media (min-width: $tablet-width) {
@@ -38,8 +38,8 @@
 
 @media (min-width: $desktop-width) {
   .header__logo {
-    top: 32%;
-    left: 8%;
+    top: 22%;
+    left: 7%;
   }
 }
 
@@ -58,6 +58,12 @@
   }
 }
 
+@media(min-width: $tablet-width) {
+  .header__nav-buttons-wrapper {
+    /*background-color: yellow;*/
+  }
+}
+
 .header__nav-buttons-centric {
   display: flex;
   justify-content: space-between;
@@ -65,12 +71,15 @@
   /*background-color: yellow;*/
 }
 
-@media(min-width: $tablet-width) {
-
-}
 
 .header__nav-toggle-burger {
   &--open {
+    display: none;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .header__nav-toggle-burger {
     display: none;
   }
 }
@@ -83,11 +92,24 @@
   }
 }
 
+@media(min-width: $desktop-width) {
+  .header__nav-toggle-cross {
+    display: none;
+ }
+}
+
 .header__search-button {
   display: none;
 
   &--open {
     display: flex;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .header__search-button {
+    display: flex;
+    margin-left: auto;
   }
 }
 
@@ -113,7 +135,12 @@
     &--open {
       display: none;/*временно*/
     }
+  }
+}
 
+@media(min-width: $desktop-width) {
+  .header__contact-list {
+    display: none; /*временно*/
   }
 }
 
@@ -134,6 +161,12 @@
 @media(min-width: $tablet-width) {
   .header__service-list--open {
     display: flex;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .header__service-list {
+    display: none;
   }
 }
 
@@ -166,20 +199,7 @@
   font-weight: bold;
 }
 
-
-/*@media (min-width: $tablet-width) {
-  .header--nav-closed {
-    & .header__contact-list {
-      display: flex;
-      margin-top: 7px;
-      margin-right: 50px;
-    }
-  }
-}*/
-
-.header--nav-open {
-
-
+/*
   & .header__bottom-wrapper {
     position: absolute;
     top: 520px;
@@ -187,7 +207,6 @@
     flex-direction: column;
     z-index: 2;
   }
-}
 
 @media (min-width: $tablet-width) {
   .header--nav-open {
@@ -252,7 +271,7 @@
       width: 270px;
     }
   }
-}
+}*/
 
 .header__navigation {
   position: absolute;
