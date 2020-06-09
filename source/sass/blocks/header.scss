@@ -8,7 +8,6 @@
   height: 88px;
   margin: 0 auto;
   padding: 0px 15px;
-  /*background-color: red;*/
 }
 
 @media (min-width: $tablet-width) {
@@ -26,8 +25,9 @@
 
 .header__logo {
   position: absolute;
-  top: 17%;
-  left: 22%;
+  top: 20%;
+  left: 25%;
+  z-index: 1;
 }
 
 @media (min-width: $tablet-width) {
@@ -45,10 +45,13 @@
 
 .header__nav-buttons-wrapper {
   width: 50%;
-  /*background-color: green;*/
 
   &--open {
-    width: 100%;
+    position: absolute;
+    top: 24px;
+    width: 290px;
+    height: 100vh;
+    background-color: #ffffff;
   }
 }
 
@@ -58,17 +61,22 @@
   }
 }
 
-@media(min-width: $tablet-width) {
+@media(min-width: $desktop-width) {
   .header__nav-buttons-wrapper {
-    /*background-color: yellow;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 272px;
+    height: 100vh;
   }
 }
+
 
 .header__nav-buttons-centric {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  /*background-color: yellow;*/
+  height: 100%;
 }
 
 
@@ -110,6 +118,7 @@
   .header__search-button {
     display: flex;
     margin-left: auto;
+    margin-top: 25px;
   }
 }
 
@@ -161,6 +170,7 @@
 @media(min-width: $tablet-width) {
   .header__service-list--open {
     display: flex;
+    margin-left: auto;
   }
 }
 
@@ -175,6 +185,18 @@
 
   &--open {
     display: flex;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    background-color: #ffffff;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .header__navigation {
+    position: absolute;
+    top: 88px;
+    left: 15px;
   }
 }
 
@@ -200,84 +222,8 @@
 }
 
 /*
-  & .header__bottom-wrapper {
-    position: absolute;
-    top: 520px;
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-  }
-
-@media (min-width: $tablet-width) {
-  .header--nav-open {
-    & .header__service-list {
-      display: flex;
-      margin-top: 7px;
-    }
-
-    & .header__nav-buttons-wrapper {
-      width: 295px;
-    }
-
-    & .header__logo {
-      left: 11%;
-    }
-
-    & .header__contact-list {
-      top: 500px;
-    }
-
-    & .header__bottom-wrapper {
-      top: 560px;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .header__bottom-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .header--desktop {
-    & .header__nav-toggle--burger,
-    & .header__nav-toggle-cross,
-    & .header__service-list {
-      display: none;
-    }
-
-    & .header__contact-list {
-      position: absolute;
-      top: 500px;
-      z-index: 2;
-    }
-
-    & .header__bottom-wrapper {
-      position: absolute;
-      top: 560px;
-      z-index: 2;
-    }
-
-    & .header__search-button {
-      display: flex;
-      margin-top: 15px;
-    }
-
-    & .header__nav-buttons-wrapper {
-      display: flex;
-      justify-content: flex-end;
-      width: 270px;
-    }
-  }
-}*/
-
 .header__navigation {
-  position: absolute;
-  top: 88px;
-  left: 0;
-  z-index: 1;
+
   background-color: #ffffff;
-}
+}*/
 

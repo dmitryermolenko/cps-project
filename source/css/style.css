@@ -49,8 +49,7 @@ img {
   width: 290px;
   height: 88px;
   margin: 0 auto;
-  padding: 0px 15px;
-  /*background-color: red;*/ }
+  padding: 0px 15px; }
 
 @media (min-width: 768px) {
   .header {
@@ -63,8 +62,9 @@ img {
 
 .header__logo {
   position: absolute;
-  top: 17%;
-  left: 22%; }
+  top: 20%;
+  left: 25%;
+  z-index: 1; }
 
 @media (min-width: 768px) {
   .header__logo {
@@ -76,24 +76,31 @@ img {
     left: 7%; } }
 
 .header__nav-buttons-wrapper {
-  width: 50%;
-  /*background-color: green;*/ }
+  width: 50%; }
   .header__nav-buttons-wrapper--open {
-    width: 100%; }
+    position: absolute;
+    top: 24px;
+    width: 290px;
+    height: 100vh;
+    background-color: #ffffff; }
 
 @media (min-width: 768px) {
   .header__nav-buttons-wrapper {
     width: 295px; } }
 
-@media (min-width: 768px) {
+@media (min-width: 1336px) {
   .header__nav-buttons-wrapper {
-    /*background-color: yellow;*/ } }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 272px;
+    height: 100vh; } }
 
 .header__nav-buttons-centric {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  /*background-color: yellow;*/ }
+  height: 100%; }
 
 .header__nav-toggle-burger--open {
   display: none; }
@@ -119,7 +126,8 @@ img {
 @media (min-width: 1336px) {
   .header__search-button {
     display: flex;
-    margin-left: auto; } }
+    margin-left: auto;
+    margin-top: 25px; } }
 
 .header__contact-list {
   display: none;
@@ -159,7 +167,8 @@ img {
 
 @media (min-width: 768px) {
   .header__service-list--open {
-    display: flex; } }
+    display: flex;
+    margin-left: auto; } }
 
 @media (min-width: 1336px) {
   .header__service-list {
@@ -168,7 +177,17 @@ img {
 .header__navigation {
   display: none; }
   .header__navigation--open {
-    display: flex; }
+    display: flex;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    background-color: #ffffff; }
+
+@media (min-width: 1336px) {
+  .header__navigation {
+    position: absolute;
+    top: 88px;
+    left: 15px; } }
 
 .header__bottom-wrapper {
   display: none; }
@@ -187,85 +206,10 @@ img {
   font-weight: bold; }
 
 /*
-  & .header__bottom-wrapper {
-    position: absolute;
-    top: 520px;
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-  }
-
-@media (min-width: $tablet-width) {
-  .header--nav-open {
-    & .header__service-list {
-      display: flex;
-      margin-top: 7px;
-    }
-
-    & .header__nav-buttons-wrapper {
-      width: 295px;
-    }
-
-    & .header__logo {
-      left: 11%;
-    }
-
-    & .header__contact-list {
-      top: 500px;
-    }
-
-    & .header__bottom-wrapper {
-      top: 560px;
-    }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .header__bottom-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .header--desktop {
-    & .header__nav-toggle--burger,
-    & .header__nav-toggle-cross,
-    & .header__service-list {
-      display: none;
-    }
-
-    & .header__contact-list {
-      position: absolute;
-      top: 500px;
-      z-index: 2;
-    }
-
-    & .header__bottom-wrapper {
-      position: absolute;
-      top: 560px;
-      z-index: 2;
-    }
-
-    & .header__search-button {
-      display: flex;
-      margin-top: 15px;
-    }
-
-    & .header__nav-buttons-wrapper {
-      display: flex;
-      justify-content: flex-end;
-      width: 270px;
-    }
-  }
-}*/
 .header__navigation {
-  position: absolute;
-  top: 88px;
-  left: 0;
-  z-index: 1;
-  background-color: #ffffff; }
 
+  background-color: #ffffff;
+}*/
 .button {
   width: 40px;
   height: 40px;
@@ -283,24 +227,17 @@ img {
 .button__icon:focus {
   opacity: 0.5; }
 
-.navigation {
-  width: 320px;
-  height: 100vh; }
-
 @media (min-width: 1336px) {
   .navigation {
-    display: flex;
-    width: 250px; } }
+    display: flex; } }
 
 .navigation__site-list {
   margin: 0;
-  margin-left: 15px;
   padding: 0; }
 
 @media (min-width: 768px) {
   .navigation__site-list {
-    margin-top: 30px;
-    margin-left: 25px; } }
+    margin-top: 30px; } }
 
 .site-list {
   display: flex;

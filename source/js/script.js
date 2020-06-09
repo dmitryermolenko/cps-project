@@ -1,3 +1,4 @@
+const header = document.querySelector('.header');
 const openButton = document.querySelector('.header__nav-toggle-burger');
 const closeButton = document.querySelector('.header__nav-toggle-cross');
 const searchButton = document.querySelector('.header__search-button');
@@ -9,6 +10,7 @@ const navigation = document.querySelector('.header__navigation');
 const activeLinks = navigation.querySelectorAll('.site-list__link')
 
 openButton.addEventListener('click', () => {
+  header.classList.add('header--open');
   openButton.classList.add('header__nav-toggle-burger--open');
   closeButton.classList.add('header__nav-toggle-cross--open');
   searchButton.classList.add('header__search-button--open');
@@ -16,9 +18,11 @@ openButton.addEventListener('click', () => {
   navButtonsCentric.classList.add('header__nav-buttons-centric--open');
   serviceList.classList.add('header__service-list--open');
   contactList.classList.add('header__contact-list--open');
+  navigation.classList.add('header__navigation--open');
 });
 
 closeButton.addEventListener('click', () => {
+  header.classList.remove('header--open');
   openButton.classList.remove('header__nav-toggle-burger--open');
   closeButton.classList.remove('header__nav-toggle-cross--open');
   searchButton.classList.remove('header__search-button--open');
@@ -26,8 +30,23 @@ closeButton.addEventListener('click', () => {
   contactList.classList.remove('header__contact-list--open');
   navButtonsWrapper.classList.remove('header__nav-buttons-wrapper--open');
   navButtonsCentric.classList.remove('header__nav-buttons-centric--open');
+  navigation.classList.remove('header__navigation--open');
 });
 
+
+window.addEventListener('resize', () => {
+  if (window.matchMedia('(min-width: 1336px)').matches) {
+    header.classList.remove('header--open');
+    openButton.classList.remove('header__nav-toggle-burger--open');
+    closeButton.classList.remove('header__nav-toggle-cross--open');
+    searchButton.classList.remove('header__search-button--open');
+    serviceList.classList.remove('header__service-list--open');
+    contactList.classList.remove('header__contact-list--open');
+    navButtonsWrapper.classList.remove('header__nav-buttons-wrapper--open');
+    navButtonsCentric.classList.remove('header__nav-buttons-centric--open');
+    navigation.classList.remove('header__navigation--open');
+  }
+});
 
 activeLinks.forEach(link => {
   link.addEventListener('click', () => {

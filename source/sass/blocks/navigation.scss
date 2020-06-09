@@ -1,24 +1,17 @@
-.navigation {
-  width: 320px;
-  height: 100vh;
-}
 
 @media (min-width: $desktop-width) {
   .navigation {
     display: flex;
-    width: 250px;
   }
 }
 
 .navigation__site-list {
   margin: 0;
-  margin-left: 15px;
   padding: 0;
 }
 
 @media (min-width: $tablet-width) {
   .navigation__site-list {
     margin-top: 30px;
-    margin-left: 25px;
   }
 }
