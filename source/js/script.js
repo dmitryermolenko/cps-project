@@ -7,6 +7,7 @@ const contactList = document.querySelector('.header__contact-list');
 const navButtonsWrapper = document.querySelector('.header__nav-buttons-wrapper');
 const navButtonsCentric = document.querySelector('.header__nav-buttons-centric');
 const navigation = document.querySelector('.header__navigation');
+const headerBottomWrapper = document.querySelector('.header__bottom-wrapper');
 const activeLinks = navigation.querySelectorAll('.site-list__link')
 
 openButton.addEventListener('click', () => {
@@ -19,6 +20,7 @@ openButton.addEventListener('click', () => {
   serviceList.classList.add('header__service-list--open');
   contactList.classList.add('header__contact-list--open');
   navigation.classList.add('header__navigation--open');
+  headerBottomWrapper.classList.add('header__bottom-wrapper--open');
 });
 
 closeButton.addEventListener('click', () => {
@@ -31,6 +33,7 @@ closeButton.addEventListener('click', () => {
   navButtonsWrapper.classList.remove('header__nav-buttons-wrapper--open');
   navButtonsCentric.classList.remove('header__nav-buttons-centric--open');
   navigation.classList.remove('header__navigation--open');
+  headerBottomWrapper.classList.remove('header__bottom-wrapper--open');
 });
 
 
@@ -45,6 +48,7 @@ window.addEventListener('resize', () => {
     navButtonsWrapper.classList.remove('header__nav-buttons-wrapper--open');
     navButtonsCentric.classList.remove('header__nav-buttons-centric--open');
     navigation.classList.remove('header__navigation--open');
+    headerBottomWrapper.classList.remove('header__bottom-wrapper--open');
   }
 });
 

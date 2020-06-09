@@ -64,5 +64,5 @@ gulp.task('deploy', function() {
     .pipe(ghPages());
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "html"))
+gulp.task("build", gulp.series("clean", "copy", "css", "html"));
 gulp.task("start", gulp.series("build", "server"));

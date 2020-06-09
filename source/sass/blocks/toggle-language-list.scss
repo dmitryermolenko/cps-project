@@ -1,0 +1,18 @@
+
+.toggle-language-list {
+  list-style: none;
+}
+
+.toggle-language-list__btn {
+  margin: 0;
+  margin-right: 7px;
+  padding: 0;
+  font-size: inherit;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+
+  &--active {
+    color: #7e7e82;
+  }
+}
