@@ -1,7 +1,3 @@
-.services {
-  min-height: 442px; /*временно*/
-}
-
 @media (min-width: $tablet-width) {
   .services {
     min-height: 435px; /*временно*/
@@ -18,6 +14,7 @@
   width: 290px;
   margin: 0 auto 24px;
   padding: 0 15px;
+  background-color: green;
 }
 
 @media (min-width: $tablet-width) {
