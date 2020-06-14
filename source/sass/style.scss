@@ -1,12 +1,13 @@
 @import "scaffolding";
 @import "variables";
+@import "blocks/overlay";
 @import "blocks/page-wrapper";
 @import "blocks/header";
 @import "blocks/button";
 @import "blocks/navigation";
-@import "blocks/site-list";
 @import "blocks/service-list";
 @import "blocks/contact-list";
+@import "blocks/site-menu";
 @import "blocks/toggle-language-list";
 @import "blocks/main";
 @import "blocks/services";

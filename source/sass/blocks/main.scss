@@ -1,9 +1,29 @@
 .main {
-  background-color: $main-bg;
+  display: flex;
+  height: 100vh;
+}
+
+.main__content-wrapper {
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@media(min-width: $tablet-width) {
+  .main__content-wrapper {
+    width: 100%;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .main__content-wrapper {
+    width: 1046px;
+  }
 }
 
 .main__header {
-  width: 290px;
+  width: 320px;
+  box-sizing: border-box;
   margin: 0 auto;
   margin-bottom: 24px;
   padding: 25px 15px 0;
@@ -11,7 +31,7 @@
 
 @media (min-width: $tablet-width) {
   .main__header {
-    width: 718px;
+    width: 100%;
     margin-bottom: 32px;
     padding-right: 25px;
     padding-left: 25px;
@@ -22,9 +42,8 @@
   .main__header {
     display: flex;
     justify-content: space-between;
-    width: 996px;
     margin-bottom: 8px;
-    padding: 42px 35px 0;
+    padding: 42px 30px 0;
   }
 }
 

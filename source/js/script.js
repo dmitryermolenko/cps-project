@@ -1,65 +1,57 @@
-const header = document.querySelector('.header');
 const openButton = document.querySelector('.header__nav-toggle-burger');
-const closeButton = document.querySelector('.header__nav-toggle-cross');
-const searchButton = document.querySelector('.header__search-button');
-const serviceList = document.querySelector('.header__service-list');
-const contactList = document.querySelector('.header__contact-list');
-const navButtonsWrapper = document.querySelector('.header__nav-buttons-wrapper');
-const navButtonsCentric = document.querySelector('.header__nav-buttons-centric');
-const navigation = document.querySelector('.header__navigation');
-const headerBottomWrapper = document.querySelector('.header__bottom-wrapper');
-const activeLinks = navigation.querySelectorAll('.site-list__link')
+const closeButton = document.querySelector('.site-menu__nav-toggle-cross');
+const header = document.querySelector('.header');
+const main = document.querySelector('.main__content-wrapper');
+const siteMenu = document.querySelector('.site-menu');
+const navigationLinks = document.querySelectorAll('.navigation__link');
+const pageNavigationLinks = document.querySelectorAll('.page-navigation__link');
+
+
 
 openButton.addEventListener('click', () => {
-  header.classList.add('header--open');
   openButton.classList.add('header__nav-toggle-burger--open');
-  closeButton.classList.add('header__nav-toggle-cross--open');
-  searchButton.classList.add('header__search-button--open');
-  navButtonsWrapper.classList.add('header__nav-buttons-wrapper--open');
-  navButtonsCentric.classList.add('header__nav-buttons-centric--open');
-  serviceList.classList.add('header__service-list--open');
-  contactList.classList.add('header__contact-list--open');
-  navigation.classList.add('header__navigation--open');
-  headerBottomWrapper.classList.add('header__bottom-wrapper--open');
+  siteMenu.classList.add('site-menu--open');
+  header.classList.add('overlay');
+  main.classList.add('overlay');
+
 });
 
 closeButton.addEventListener('click', () => {
-  header.classList.remove('header--open');
   openButton.classList.remove('header__nav-toggle-burger--open');
-  closeButton.classList.remove('header__nav-toggle-cross--open');
-  searchButton.classList.remove('header__search-button--open');
-  serviceList.classList.remove('header__service-list--open');
-  contactList.classList.remove('header__contact-list--open');
-  navButtonsWrapper.classList.remove('header__nav-buttons-wrapper--open');
-  navButtonsCentric.classList.remove('header__nav-buttons-centric--open');
-  navigation.classList.remove('header__navigation--open');
-  headerBottomWrapper.classList.remove('header__bottom-wrapper--open');
+  siteMenu.classList.remove('site-menu--open');
+  header.classList.remove('overlay');
+  main.classList.remove('overlay');
 });
 
 
 window.addEventListener('resize', () => {
   if (window.matchMedia('(min-width: 1336px)').matches) {
-    header.classList.remove('header--open');
-    openButton.classList.remove('header__nav-toggle-burger--open');
-    closeButton.classList.remove('header__nav-toggle-cross--open');
-    searchButton.classList.remove('header__search-button--open');
-    serviceList.classList.remove('header__service-list--open');
-    contactList.classList.remove('header__contact-list--open');
-    navButtonsWrapper.classList.remove('header__nav-buttons-wrapper--open');
-    navButtonsCentric.classList.remove('header__nav-buttons-centric--open');
-    navigation.classList.remove('header__navigation--open');
-    headerBottomWrapper.classList.remove('header__bottom-wrapper--open');
+    siteMenu.classList.remove('site-menu--open');
   }
 });
 
-activeLinks.forEach(link => {
+navigationLinks.forEach(link => {
   link.addEventListener('click', () => {
-    activeLinks.forEach(link => {
-      if (link.classList.contains('site-list__link--active')) {
-        link.classList.remove('site-list__link--active');
+    navigationLinks.forEach(link => {
+      if (link.classList.contains('navigation__link--active')) {
+        link.classList.remove('navigation__link--active');
       }
     });
 
-    link.classList.add('site-list__link--active');
+    link.classList.add('navigation__link--active');
   });
 });
+
+pageNavigationLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    pageNavigationLinks.forEach(link => {
+      if (link.classList.contains('page-navigation__link--active')) {
+        link.classList.remove('page-navigation__link--active');
+      }
+    });
+
+    link.classList.add('page-navigation__link--active');
+  });
+});
+
+

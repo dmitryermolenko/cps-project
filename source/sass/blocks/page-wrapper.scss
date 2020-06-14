@@ -1,5 +1,7 @@
 @media (min-width: $desktop-width) {
   .page-wrapper {
     display: flex;
+    width: $desktop-width;
+    margin: 0 auto;
   }
 }

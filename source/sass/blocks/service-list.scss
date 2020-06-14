@@ -10,15 +10,15 @@
   .service-list--main {
     display: flex;
     flex-wrap: wrap;
-    width: 370px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .service-list--header {
-    display: none;
+@media(min-width: $desktop-width) {
+  .service-list__item--repair {
+    margin-right: 20px;
   }
 }
+
 
 .service-list__link {
   color: inherit;

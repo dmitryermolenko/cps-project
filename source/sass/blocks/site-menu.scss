@@ -1,0 +1,139 @@
+.site-menu {
+  display: none;
+}
+
+@media(min-width: $desktop-width) {
+  .site-menu {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    width: 320px;
+    padding: 35px 25px 0 25px;
+    background-color: #ffffff;
+  }
+}
+
+.site-menu--open {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 320px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-left: -160px;
+  padding: 25px 0 0 15px;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+@media(min-width: $tablet-width) {
+  .site-menu--open {
+    left: 0;
+    margin-left: 0;
+    padding: 25px 0 0 25px;
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+  }
+}
+
+
+.site-menu__logo {
+  position: absolute;
+  top: 15px;
+  left: 70px;
+}
+
+@media(min-width: $tablet-width) {
+  .site-menu__logo {
+    left: 100px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .site-menu__logo {
+    top: 30px;
+    left: 25px;
+  }
+}
+
+.site-menu__top-wrapper {
+  display: flex;
+  width: 290px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+@media(min-width: $desktop-width) {
+  .site-menu__top-wrapper {
+    width: 100%;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .site-menu__nav-toggle-cross {
+    display: none;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .site-menu__search-button {
+    margin-left: auto;
+  }
+}
+
+.site-menu__navigation {
+  margin-bottom: 20px;
+}
+
+
+.site-menu__contact-list {
+  display: flex;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.site-menu__contact-item {
+  margin-right: 15px;
+}
+
+.site-menu__bottom-wrapper {
+  margin-top: 100%;
+}
+
+.site-menu__email {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.site-menu__phone {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+}
+
+.site-menu__toggle-lang-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-menu__toggle-lang {
+  margin: 0;
+  margin-right: 7px;
+  padding: 0;
+  font-size: inherit;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+}
+
+.site-menu__toggle-lang--active {
+  color: #7e7e82;
+}

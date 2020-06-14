@@ -1,6 +1,7 @@
 
 .about-us__wrapper {
-  width: 290px;
+  width: 320px;
+  box-sizing: border-box;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
@@ -9,8 +10,7 @@
 @media (min-width: $tablet-width) {
   .about-us__wrapper {
     display: flex;
-    justify-content: space-between;
-    width: 718px;
+    width: 100%;
     padding-right: 25px;
     padding-left: 25px;
   }
@@ -18,14 +18,20 @@
 
 @media (min-width: $desktop-width) {
   .about-us__wrapper {
-    width: 996px;
+    width: 1046px;
     padding-right: 35px;
     padding-left: 35px;
   }
 }
 
+@media(min-width: $tablet-width) {
+  .about-us__left-column {
+    width: 50%;
+    margin-right: 10%;
+  }
+}
+
 .about-us__text-container {
-  width: 275px;
   height: 90px;
   margin-bottom: 10px;
   overflow: hidden;
@@ -33,14 +39,12 @@
 
 @media (min-width: $tablet-width) {
   .about-us__text-container {
-    width: 300px;
     height: 150px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about-us__text-container {
-    width: 425px;
     margin-bottom: 15px;
   }
 }
@@ -61,7 +65,7 @@
 @media (min-width: $tablet-width) {
   .about-us__picture {
     width: 360px;
-    height: 208;
+    height: 208px;
   }
 }
 
