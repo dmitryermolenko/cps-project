@@ -5,6 +5,7 @@
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
+  background-color: blue;
 }
 
 @media (min-width: $tablet-width) {
@@ -58,8 +59,8 @@
 }
 
 .about-us__picture {
+  display: block;
   width: 320px;
-  height: 176px;
 }
 
 @media (min-width: $tablet-width) {
