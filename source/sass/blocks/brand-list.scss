@@ -49,6 +49,24 @@
   }
 }
 
+@media(min-width: $tablet-width) {
+  .brand-list__item {
+    width: 224px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .brand-list__item {
+    margin-right: 17px;
+  }
+
+  .brand-list__item:nth-child(4n) {
+    margin-right: 0;
+   }
+  }
+
 .brand-list__link {
   position: relative;
 

@@ -1,13 +1,14 @@
 .more-button {
   display: flex;
-  margin-bottom: 15px;
-  padding: 0;
-  padding-left: 5px;
-
   font: inherit;
   border: none;
   background-color: transparent;
+  background-image: url('../../img/more.svg');
+  background-repeat: no-repeat;
+  padding: 0;
+  padding-left: 30px;
 }
+
 
 @media (min-width: $tablet-width) {
   .more-button {
@@ -15,6 +16,6 @@
   }
 }
 
-.more-button__icon {
-  margin-right: 5px;
+.more-button--less {
+  background-image: url('../../img/less.svg');
 }

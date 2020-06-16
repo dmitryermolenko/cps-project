@@ -3,6 +3,12 @@
   justify-content: center;
 }
 
+@media(min-width: $tablet-width) {
+  .slider__controls {
+    display: none;
+  }
+}
+
 .slider__controls-label {
   width: 12px;
   height: 12px;
@@ -17,14 +23,27 @@
   overflow: hidden;
 }
 
+@media(min-width: $tablet-width) {
+  .slider__wrapper {
+    overflow: visible;
+  }
+}
+
 .slider__slider-list {
   display: flex;
   margin-bottom: 15px;
   overflow: hidden;
 }
 
+
 .slider-list__item {
   flex-shrink: 0;
+}
+
+@media(min-width: $tablet-width) {
+  .slider-list__item {
+    flex-shrink: 1;
+  }
 }
 
 #brand-1:checked ~ .slider__wrapper .slider__slider-list,

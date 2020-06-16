@@ -1,6 +1,6 @@
 .main {
   display: flex;
-  height: 100vh;
+  background-color: $main-bg;
 }
 
 .main__content-wrapper {
@@ -12,12 +12,13 @@
 @media(min-width: $tablet-width) {
   .main__content-wrapper {
     width: 100%;
+    margin: 0 auto;
   }
 }
 
 @media(min-width: $desktop-width) {
   .main__content-wrapper {
-    width: 1046px;
+    width: 1006px;
   }
 }
 

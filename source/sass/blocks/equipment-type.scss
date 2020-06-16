@@ -5,7 +5,14 @@
 .equipment-type__wrapper {
   width: 290px;
   margin: 0 auto;
-  background-color: $main-bg;
+}
+
+@media(min-width: $tablet-width) {
+  .equipment-type__wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 25px;
+  }
 }
 
 .equipment-type__title {
@@ -25,6 +32,27 @@
   list-style: none;
 }
 
-.equipment-type__show-more-button {
+@media(min-width: $tablet-width) {
+  .equipment-type__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    box-sizing: border-box;
+    height: 164px;
+    margin: 0 auto;
+  }
+
+  .equipment-type__list--full {
+    height: auto;
+  }
+}
+
+.equipment-type__more-button {
   display: none;
+}
+
+@media(min-width: $tablet-width) {
+  .equipment-type__more-button {
+    display: block;
+  }
 }

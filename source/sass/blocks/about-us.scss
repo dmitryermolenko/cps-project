@@ -5,7 +5,6 @@
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
-  background-color: blue;
 }
 
 @media (min-width: $tablet-width) {
@@ -36,13 +35,28 @@
   height: 90px;
   margin-bottom: 10px;
   overflow: hidden;
+
+  &--full {
+    height: auto;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .about-us__text-container {
-    height: 150px;
+    height: 145px;
+  }
+
+  .about-us__text-container--full {
+    height: auto;
   }
 }
+
+/*@media (min-width: $tablet-width) {
+  .about-us__text-container--full {
+    height: auto;
+  }
+}*/
+
 
 @media (min-width: $desktop-width) {
   .about-us__text-container {
@@ -75,5 +89,9 @@
     width: 532px;
     height: 307px;
   }
+}
 
+.about-us__more-button {
+  margin: 0;
+  margin-bottom: 15px;
 }

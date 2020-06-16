@@ -5,6 +5,12 @@ const main = document.querySelector('.main__content-wrapper');
 const siteMenu = document.querySelector('.site-menu');
 const navigationLinks = document.querySelectorAll('.navigation__link');
 const pageNavigationLinks = document.querySelectorAll('.page-navigation__link');
+const aboutMoreButton = document.querySelector('.about-us__more-button');
+const brandMoreButton = document.querySelector('.equipment-brand__more-button');
+const typeMoreButton = document.querySelector('.equipment-type__more-button');
+const textContainer = document.querySelector('.about-us__text-container');
+const brandContainer = document.querySelector('.equipment-brand__brand-list');
+const typeContainer = document.querySelector('.equipment-type__list');
 
 
 
@@ -53,5 +59,41 @@ pageNavigationLinks.forEach(link => {
     link.classList.add('page-navigation__link--active');
   });
 });
+
+aboutMoreButton.addEventListener('click', () => {
+  if (aboutMoreButton.innerText === 'Читать далее') {
+    aboutMoreButton.innerText = 'Скрыть';
+    aboutMoreButton.classList.add('more-button--less');
+    textContainer.classList.add('about-us__text-container--full');
+  } else {
+    aboutMoreButton.innerText = 'Читать далее';
+    aboutMoreButton.classList.remove('more-button--less');
+    textContainer.classList.remove('about-us__text-container--full');
+  }
+})
+
+brandMoreButton.addEventListener('click', () => {
+  if (brandMoreButton.innerText === 'Показать все') {
+    brandMoreButton.innerText = 'Скрыть';
+    brandMoreButton.classList.add('more-button--less');
+    brandContainer.classList.add('equipment-brand__brand-list--full');
+  } else {
+    brandMoreButton.innerText = 'Показать все';
+    brandMoreButton.classList.remove('more-button--less');
+    brandContainer.classList.remove('equipment-brand__brand-list--full');
+  }
+});
+
+typeMoreButton.addEventListener('click', () => {
+  if (typeMoreButton.innerText === 'Показать все') {
+    typeMoreButton.innerText = 'Скрыть';
+    typeMoreButton.classList.add('more-button--less');
+    typeContainer.classList.add('equipment-type__list--full');
+  } else {
+    typeMoreButton.innerText = 'Показать все';
+    typeMoreButton.classList.remove('more-button--less');
+    typeContainer.classList.remove('equipment-type__list--full');
+  }
+})
 
 
