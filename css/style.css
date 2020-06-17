@@ -237,6 +237,7 @@ img {
   position: absolute;
   top: -90px;
   left: -320px;
+  bottom: 0;
   width: 320px;
   box-sizing: border-box;
   display: flex;
@@ -249,11 +250,12 @@ img {
 @media (min-width: 1336px) {
   .site-menu {
     position: relative;
-    display: block;
+    display: flex;
+    top: 0;
     left: 0;
     box-sizing: border-box;
     width: 320px;
-    padding: 35px 25px 0 25px;
+    padding: 35px 25px 25px;
     background-color: #ffffff;
     transition: none; } }
 
@@ -265,7 +267,6 @@ img {
 @media (min-width: 768px) {
   .site-menu--open {
     left: 0;
-    bottom: 0;
     margin-left: 0;
     padding: 25px; } }
 
@@ -384,7 +385,7 @@ img {
 
 @media (min-width: 1336px) {
   .main__content-wrapper {
-    width: 1006px; } }
+    width: 1020px; } }
 
 .main__header {
   width: 100%;
@@ -426,7 +427,7 @@ img {
 
 @media (min-width: 1336px) {
   .services__wrapper {
-    width: 1046px;
+    width: 1006px;
     padding-right: 35px;
     padding-left: 35px;
     margin-bottom: 19px; } }
@@ -474,7 +475,7 @@ img {
 
 @media (min-width: 1336px) {
   .about-us__wrapper {
-    width: 1046px;
+    width: 1006px;
     padding-right: 35px;
     padding-left: 35px; } }
 
