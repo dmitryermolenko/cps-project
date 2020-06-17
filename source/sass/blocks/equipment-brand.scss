@@ -3,14 +3,13 @@
 }
 
 .equipment-brand__wrapper {
-  width: 290px;
-  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 15px;
 }
 
 @media(min-width: $tablet-width) {
   .equipment-brand__wrapper {
-    width: 100%;
-    box-sizing: border-box;
     padding: 0 25px;
   }
 }
@@ -36,7 +35,6 @@
   .equipment-brand__brand-list {
     display: flex;
     flex-wrap: wrap;
-    /*width: 718px;*/
     width: auto;
     box-sizing: border-box;
     height: 164px;

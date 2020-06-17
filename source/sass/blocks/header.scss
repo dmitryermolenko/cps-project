@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
 
-  width: 320px;
+  width: 100%;
   height: 88px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -14,7 +14,6 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    width: 100%;
     padding: 0 25px;
   }
 }
@@ -47,7 +46,18 @@
 
 .header__nav-toggle-burger {
    margin-top: 3px;
+   background-image: url('../../img/burger.svg');
+
+   &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
+
+
 
 @media(min-width: $desktop-width) {
   .header__nav-toggle-burger {

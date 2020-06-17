@@ -11,22 +11,41 @@ const typeMoreButton = document.querySelector('.equipment-type__more-button');
 const textContainer = document.querySelector('.about-us__text-container');
 const brandContainer = document.querySelector('.equipment-brand__brand-list');
 const typeContainer = document.querySelector('.equipment-type__list');
+const overlays = document.querySelectorAll('.overlay');
 
 
 
 openButton.addEventListener('click', () => {
   openButton.classList.add('header__nav-toggle-burger--open');
   siteMenu.classList.add('site-menu--open');
-  header.classList.add('overlay');
-  main.classList.add('overlay');
+  overlays.forEach(item =>{
+    item.classList.add('overlay--active');
+  });
 
 });
 
 closeButton.addEventListener('click', () => {
   openButton.classList.remove('header__nav-toggle-burger--open');
   siteMenu.classList.remove('site-menu--open');
-  header.classList.remove('overlay');
-  main.classList.remove('overlay');
+  overlays.forEach(item =>{
+    item.classList.remove('overlay--active');
+  });
+});
+
+document.addEventListener('click', (evt) => {
+  const target = evt.target;
+  const isMenuClicked = target == siteMenu || siteMenu.contains(target);
+  const isOpenButtonClicked = target == openButton;
+
+
+  if (!isOpenButtonClicked && (!isMenuClicked)) {
+    overlays.forEach(item =>{
+      item.classList.remove('overlay--active');
+    });
+    openButton.classList.remove('header__nav-toggle-burger--open');
+    siteMenu.classList.remove('site-menu--open');
+  }
+
 });
 
 
@@ -94,6 +113,4 @@ typeMoreButton.addEventListener('click', () => {
     typeMoreButton.classList.remove('more-button--less');
     typeContainer.classList.remove('equipment-type__list--full');
   }
-})
-
-
+});

@@ -3,14 +3,13 @@
 }
 
 .equipment-type__wrapper {
-  width: 290px;
-  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 15px;
 }
 
 @media(min-width: $tablet-width) {
   .equipment-type__wrapper {
-    width: 100%;
-    box-sizing: border-box;
     padding: 0 25px;
   }
 }

@@ -1,6 +1,6 @@
 
 .about-us__wrapper {
-  width: 320px;
+  width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
   padding-right: 15px;
@@ -10,7 +10,6 @@
 @media (min-width: $tablet-width) {
   .about-us__wrapper {
     display: flex;
-    width: 100%;
     padding-right: 25px;
     padding-left: 25px;
   }
@@ -51,13 +50,6 @@
   }
 }
 
-/*@media (min-width: $tablet-width) {
-  .about-us__text-container--full {
-    height: auto;
-  }
-}*/
-
-
 @media (min-width: $desktop-width) {
   .about-us__text-container {
     margin-bottom: 15px;
@@ -74,7 +66,8 @@
 
 .about-us__picture {
   display: block;
-  width: 320px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
