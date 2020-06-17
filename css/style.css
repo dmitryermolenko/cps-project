@@ -251,7 +251,6 @@ img {
     position: relative;
     display: block;
     left: 0;
-    bottom: 0;
     box-sizing: border-box;
     width: 320px;
     padding: 35px 25px 0 25px;
@@ -266,6 +265,7 @@ img {
 @media (min-width: 768px) {
   .site-menu--open {
     left: 0;
+    bottom: 0;
     margin-left: 0;
     padding: 25px; } }
 
