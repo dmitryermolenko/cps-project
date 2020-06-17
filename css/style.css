@@ -236,7 +236,6 @@ img {
 .site-menu {
   position: absolute;
   top: -90px;
-  bottom: 0;
   left: -320px;
   width: 320px;
   box-sizing: border-box;
@@ -252,6 +251,7 @@ img {
     position: relative;
     display: block;
     left: 0;
+    bottom: 0;
     box-sizing: border-box;
     width: 320px;
     padding: 35px 25px 0 25px;
