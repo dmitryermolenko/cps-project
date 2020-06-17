@@ -235,9 +235,10 @@ img {
 
 .site-menu {
   position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
+  top: -90px;
+  bottom: 0;
+  left: -320px;
+  width: 320px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -245,11 +246,6 @@ img {
   background-color: #ffffff;
   z-index: 2;
   transition: left 0.7s cubic-bezier(0.215, 0.61, 0.355, 1); }
-
-@media (min-width: 768px) {
-  .site-menu {
-    width: 320px;
-    left: -320px; } }
 
 @media (min-width: 1336px) {
   .site-menu {
@@ -325,7 +321,7 @@ img {
   margin-right: 15px; }
 
 .site-menu__bottom-wrapper {
-  margin-top: 100%; }
+  margin-top: auto; }
 
 .site-menu__email {
   margin: 0;
@@ -374,7 +370,8 @@ img {
 
 .main {
   display: flex;
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  position: relative; }
 
 .main__content-wrapper {
   width: 100%;
