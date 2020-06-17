@@ -7,17 +7,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="page-wrapper page-wrapper--inactive">
+  <div class="page-wrapper">
+    <div class="overlay">
   <header class="header">
     <a class="header__logo">
       <img class="header__logo-image" src="./img/logo.svg" width="96" height="51" alt="Логотип сервисного центра по ремонту техники">
     </a>
     <button class="header__nav-toggle-burger button" type="button">
-    <span class="visually-hidden">Открыть меню</span>
-    <svg class="button__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect width="40" height="40" rx="20" fill="#FF3E79"></rect>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M11 13C11 12.4477 11.4477 12 12 12H28C28.5523 12 29 12.4477 29 13C29 13.5523 28.5523 14 28 14H12C11.4477 14 11 13.5523 11 13ZM11 20C11 19.4477 11.4477 19 12 19H20C20.5523 19 21 19.4477 21 20C21 20.5523 20.5523 21 20 21H12C11.4477 21 11 20.5523 11 20ZM12 26C11.4477 26 11 26.4477 11 27C11 27.5523 11.4477 28 12 28H24C24.5523 28 25 27.5523 25 27C25 26.4477 24.5523 26 24 26H12Z" fill="white"></path>
-      </svg>
+      <span class="visually-hidden">Открыть меню</span>
     </button>
 
       <ul class="header__contact-list contact-list">
@@ -79,6 +76,7 @@
         </li>
     </ul>
   </header>
+</div>
 
   <main class="main">
     <aside class="site-menu">
@@ -88,10 +86,6 @@
       <div class="site-menu__top-wrapper">
       <button class="site-menu__nav-toggle-cross button" type="button">
         <span class="visually-hidden">Закрыть меню</span>
-        <svg class="button__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="40" height="40" rx="20" fill="#FF3E79"></rect>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7935 12.2571C13.403 11.8666 12.7698 11.8666 12.3793 12.2571L12.2571 12.3793C11.8666 12.7698 11.8666 13.403 12.2571 13.7935L18.4636 20L12.2571 26.2065C11.8666 26.597 11.8666 27.2302 12.2571 27.6207L12.3793 27.7429C12.7698 28.1334 13.403 28.1334 13.7935 27.7429L20 21.5364L26.2065 27.7429C26.597 28.1334 27.2302 28.1334 27.6207 27.7429L27.7429 27.6207C28.1334 27.2302 28.1334 26.597 27.7429 26.2065L21.5364 20L27.7429 13.7935C28.1334 13.403 28.1334 12.7698 27.7429 12.3793L27.6207 12.2571C27.2302 11.8666 26.597 11.8666 26.2065 12.2571L20 18.4636L13.7935 12.2571Z" fill="white"></path>
-        </svg>
       </button>
       <button class="site-menu__search-button search-button button" type="button">
         <svg class="button__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -184,6 +178,7 @@
     </aside>
 
     <div class="main__content-wrapper">
+      <div class="overlay">
     <header class="main__header">
       <h1 class="main__title">Услуги и сервисы</h1>
      <ul class="service-list service-list--main">
@@ -243,12 +238,13 @@
           <p class="about-us__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
             Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p><br>
           <p class="about-us__text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов.
-            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-      <button class="more-button" type="button">
-        <svg class="more-button__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5001 7.50008L12.0001 10.0001L9.50008 7.50008C9.22393 7.22393 8.77622 7.22393 8.50008 7.50008C8.22393 7.77622 8.22393 8.22393 8.50008 8.50008L11.293 11.293C11.6835 11.6835 12.3167 11.6835 12.7072 11.293L15.5001 8.50008C15.7762 8.22393 15.7762 7.77622 15.5001 7.50008C15.2239 7.22393 14.7762 7.22393 14.5001 7.50008ZM14.5001 13.5001L12.0001 16.0001L9.50008 13.5001C9.22393 13.2239 8.77622 13.2239 8.50008 13.5001C8.22393 13.7762 8.22393 14.2239 8.50008 14.5001L11.293 17.293C11.6835 17.6835 12.3167 17.6835 12.7072 17.293L15.5001 14.5001C15.7762 14.2239 15.7762 13.7762 15.5001 13.5001C15.2239 13.2239 14.7762 13.2239 14.5001 13.5001Z" fill="#41F6D7"></path>
-          </svg>
+      <button class="about-us__more-button more-button" type="button">
         Читать далее
       </button>
     </div>
@@ -259,7 +255,149 @@
     </picture>
     </div>
     </section>
+
+    <section class="equipment-brand slider">
+      <div class="equipment-brand__wrapper">
+        <h2 class="visually-hidden">Бренды, с которыми работает компания</h2>
+        <p class="equipment-brand__title">Ремонт техники различных брендов</p>
+        <input class="visually-hidden" type="radio" id="brand-1" name="toggle" checked="">
+        <input class="visually-hidden" type="radio" id="brand-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="brand-3" name="toggle">
+        <input class="visually-hidden" type="radio" id="brand-4" name="toggle">
+        <input class="visually-hidden" type="radio" id="brand-5" name="toggle">
+        <input class="visually-hidden" type="radio" id="brand-6" name="toggle">
+        <input class="visually-hidden" type="radio" id="brand-7" name="toggle">
+        <input class="visually-hidden" type="radio" id="brand-8" name="toggle">
+
+        <div class="slider__wrapper">
+          <ul class="equipment-brand__brand-list brand-list slider__slider-list">
+            <li class="brand-list__item brand-list__item--lenovo slider-list__item" id="slide1">
+              <a class="brand-list__link" href="#">
+                <span class="visually-hidden">Сссылка на сайт компании «Леново»</span>
+              </a>
+            </li>
+            <li class="brand-list__item brand-list__item--samsung slider-list__item" id="slide2">
+              <a class="brand-list__link" href="#">
+                <span class="visually-hidden">Сссылка на сайт компании «Самсунг»</span>
+              </a>
+            </li>
+        <li class="brand-list__item brand-list__item--apple slider-list__item" id="slide3">
+              <a class="brand-list__link" href="#">
+                <span class="visually-hidden">Сссылка на сайт компании «Эппл»</span>
+              </a>
+            </li>
+            <li class="brand-list__item brand-list__item--viewsonic slider-list__item" id="slide4">
+              <a class="brand-list__link" href="#">
+                <span class="visually-hidden">Сссылка на сайт компании «Вью Соник»</span>
+              </a>
+            </li>
+            <li class="brand-list__item brand-list__item--bosch slider-list__item" id="slide5">
+              <a class="brand-list__link" href="#">
+                <span class="visually-hidden">Сссылка на сайт компании «Бош»</span>
+              </a>
+            </li>
+            <li class="brand-list__item brand-list__item--hp slider-list__item" id="slide6">
+              <a class="brand-list__link" href="#">
+                <span class="visually-hidden">Сссылка на сайт компании «Эйч Пи»</span>
+              </a>
+            </li>
+            <li class="brand-list__item brand-list__item--acer slider-list__item" id="slide7">
+              <a class="brand-list__link" href="#">
+                <span class="visually-hidden">Сссылка на сайт компании «Асер»</span>
+              </a>
+            </li>
+            <li class="brand-list__item brand-list__item--sony slider-list__item" id="slide8">
+              <a class="brand-list__link" href="#">
+                <span class="visually-hidden">Сссылка на сайт компании «Сони»</span>
+              </a>
+            </li>
+          </ul>
+      </div>
+
+    <div class="slider__controls">
+      <label class="slider__controls-label" for="brand-1"><span class="visually-hidden
+        ">Первый</span>
+      </label>
+      <label class="slider__controls-label" for="brand-2">
+        <span class="visually-hidden">Второй</span>
+      </label>
+      <label class="slider__controls-label" for="brand-3">
+        <span class="visually-hidden">Третий</span>
+      </label>
+      <label class="slider__controls-label" for="brand-4">
+        <span class="visually-hidden">Четвертый</span>
+      </label>
+      <label class="slider__controls-label" for="brand-5">
+        <span class="visually-hidden">Пятый</span>
+      </label>
+      <label class="slider__controls-label" for="brand-6">
+        <span class="visually-hidden">Шестой</span>
+      </label>
+      <label class="slider__controls-label" for="brand-7">
+        <span class="visually-hidden">Седьмой</span>
+      </label>
+      <label class="slider__controls-label" for="brand-8">
+        <span class="visually-hidden">Восьмой</span>
+      </label>
+    </div>
+
+      <button class="equipment-brand__more-button more-button" type="button">
+        Показать все
+      </button>
+    </div>
     </section>
+
+    <section class="equipment-type">
+      <div class="equipment-type__wrapper">
+        <h2 class="visually-hidden">Виды техники, с которыми работает компания</h2>
+        <p class="equipment-type__title">Ремонт различных видов техники</p>
+        <input class="visually-hidden" type="radio" id="type-1" name="toggle" checked="">
+        <input class="visually-hidden" type="radio" id="type-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="type-3" name="toggle">
+        <input class="visually-hidden" type="radio" id="type-4" name="toggle">
+
+        <div class="slider__wrapper">
+        <ul class="equipment-type__list type-list slider__slider-list">
+          <li class="type-list__item slider-list__item">
+            <p class="type-list__item-title">Ремонт ноутбуков</p>
+            <a class="type-list__link" href="#" aria-label="Ремонт ноутбуков"></a>
+          </li>
+          <li class="type-list__item slider-list__item">
+            <p class="type-list__item-title">Ремонт планшетов</p>
+            <a class="type-list__link" href="#" aria-label="Ремонт планшетов"></a>
+          </li>
+          <li class="type-list__item slider-list__item">
+            <p class="type-list__item-title">Ремонт ПК</p>
+            <a class="type-list__link" href="#" aria-label="Ремонт ПК"></a>
+          </li>
+          <li class="type-list__item slider-list__item">
+            <p class="type-list__item-title">Ремонт мониторов</p>
+            <a class="type-list__link" href="#" aria-label="Ремонт мониторов"></a>
+          </li>
+        </ul>
+      </div>
+
+        <div class="slider__controls">
+          <label class="slider__controls-label" for="type-1"><span class="visually-hidden
+            ">Первый</span>
+          </label>
+          <label class="slider__controls-label" for="type-2">
+            <span class="visually-hidden">Второй</span>
+          </label>
+          <label class="slider__controls-label" for="type-3">
+            <span class="visually-hidden">Третий</span>
+          </label>
+          <label class="slider__controls-label" for="type-4">
+            <span class="visually-hidden">Четвертый</span>
+          </label>
+        </div>
+        <button class="equipment-type__more-button more-button" type="button">
+          Показать все
+        </button>
+    </div>
+    </section>
+    </section>
+    </div>
   </div>
   </main>
 </div>

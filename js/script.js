@@ -5,22 +5,47 @@ const main = document.querySelector('.main__content-wrapper');
 const siteMenu = document.querySelector('.site-menu');
 const navigationLinks = document.querySelectorAll('.navigation__link');
 const pageNavigationLinks = document.querySelectorAll('.page-navigation__link');
+const aboutMoreButton = document.querySelector('.about-us__more-button');
+const brandMoreButton = document.querySelector('.equipment-brand__more-button');
+const typeMoreButton = document.querySelector('.equipment-type__more-button');
+const textContainer = document.querySelector('.about-us__text-container');
+const brandContainer = document.querySelector('.equipment-brand__brand-list');
+const typeContainer = document.querySelector('.equipment-type__list');
+const overlays = document.querySelectorAll('.overlay');
 
 
 
 openButton.addEventListener('click', () => {
   openButton.classList.add('header__nav-toggle-burger--open');
   siteMenu.classList.add('site-menu--open');
-  header.classList.add('overlay');
-  main.classList.add('overlay');
+  overlays.forEach(item =>{
+    item.classList.add('overlay--active');
+  });
 
 });
 
 closeButton.addEventListener('click', () => {
   openButton.classList.remove('header__nav-toggle-burger--open');
   siteMenu.classList.remove('site-menu--open');
-  header.classList.remove('overlay');
-  main.classList.remove('overlay');
+  overlays.forEach(item =>{
+    item.classList.remove('overlay--active');
+  });
+});
+
+document.addEventListener('click', (evt) => {
+  const target = evt.target;
+  const isMenuClicked = target == siteMenu || siteMenu.contains(target);
+  const isOpenButtonClicked = target == openButton;
+
+
+  if (!isOpenButtonClicked && (!isMenuClicked)) {
+    overlays.forEach(item =>{
+      item.classList.remove('overlay--active');
+    });
+    openButton.classList.remove('header__nav-toggle-burger--open');
+    siteMenu.classList.remove('site-menu--open');
+  }
+
 });
 
 
@@ -54,4 +79,38 @@ pageNavigationLinks.forEach(link => {
   });
 });
 
+aboutMoreButton.addEventListener('click', () => {
+  if (aboutMoreButton.innerText === 'Читать далее') {
+    aboutMoreButton.innerText = 'Скрыть';
+    aboutMoreButton.classList.add('more-button--less');
+    textContainer.classList.add('about-us__text-container--full');
+  } else {
+    aboutMoreButton.innerText = 'Читать далее';
+    aboutMoreButton.classList.remove('more-button--less');
+    textContainer.classList.remove('about-us__text-container--full');
+  }
+})
 
+brandMoreButton.addEventListener('click', () => {
+  if (brandMoreButton.innerText === 'Показать все') {
+    brandMoreButton.innerText = 'Скрыть';
+    brandMoreButton.classList.add('more-button--less');
+    brandContainer.classList.add('equipment-brand__brand-list--full');
+  } else {
+    brandMoreButton.innerText = 'Показать все';
+    brandMoreButton.classList.remove('more-button--less');
+    brandContainer.classList.remove('equipment-brand__brand-list--full');
+  }
+});
+
+typeMoreButton.addEventListener('click', () => {
+  if (typeMoreButton.innerText === 'Показать все') {
+    typeMoreButton.innerText = 'Скрыть';
+    typeMoreButton.classList.add('more-button--less');
+    typeContainer.classList.add('equipment-type__list--full');
+  } else {
+    typeMoreButton.innerText = 'Показать все';
+    typeMoreButton.classList.remove('more-button--less');
+    typeContainer.classList.remove('equipment-type__list--full');
+  }
+});
