@@ -465,8 +465,7 @@ img {
   box-sizing: border-box;
   margin: 0 auto;
   padding-right: 15px;
-  padding-left: 15px;
-  background-color: green; }
+  padding-left: 15px; }
 
 @media (min-width: 768px) {
   .about-us__wrapper {
