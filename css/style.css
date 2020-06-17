@@ -36,11 +36,18 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.overlay {
+  display: none; }
+
 .overlay--active {
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  transition: all 3s; }
+  z-index: 2; }
 
 @media (min-width: 1336px) {
   .page-wrapper {
@@ -229,8 +236,8 @@ img {
 .site-menu {
   position: absolute;
   top: 0;
-  left: -320px;
-  width: 320px;
+  left: -100%;
+  width: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -238,6 +245,11 @@ img {
   background-color: #ffffff;
   z-index: 2;
   transition: left 0.7s cubic-bezier(0.215, 0.61, 0.355, 1); }
+
+@media (min-width: 768px) {
+  .site-menu {
+    width: 320px;
+    left: -320px; } }
 
 @media (min-width: 1336px) {
   .site-menu {
@@ -521,7 +533,7 @@ img {
   font: inherit;
   border: none;
   background-color: transparent;
-  background-image: url("../../img/more.svg");
+  background-image: url("../img/more.svg");
   background-repeat: no-repeat;
   padding: 0;
   padding-left: 30px;
@@ -532,7 +544,7 @@ img {
     margin-bottom: 0; } }
 
 .more-button--less {
-  background-image: url("../../img/less.svg"); }
+  background-image: url("../img/less.svg"); }
 
 .equipment-brand {
   margin-bottom: 25px; }
@@ -638,15 +650,15 @@ img {
   background-repeat: no-repeat;
   background-position: 15px 50%; }
   .brand-list__item--lenovo {
-    background-image: url("../../img/lenovo.svg"); }
+    background-image: url("../img/lenovo.svg"); }
   .brand-list__item--samsung {
-    background-image: url("../../img/samsung.svg"); }
+    background-image: url("../img/samsung.svg"); }
   .brand-list__item--apple {
-    background-image: url("../../img/apple.svg"); }
+    background-image: url("../img/apple.svg"); }
   .brand-list__item--viewsonic {
-    background-image: url("../../img/viewsonic.svg"); }
+    background-image: url("../img/viewsonic.svg"); }
   .brand-list__item--bosch {
-    background-image: url("../../img/bosch.svg"); }
+    background-image: url("../img/bosch.svg"); }
   .brand-list__item--hp {
     background-image: url("../../img/hp.svg"); }
   .brand-list__item--acer {
