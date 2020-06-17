@@ -289,7 +289,7 @@ img {
     display: none; } }
 
 .site-menu__nav-toggle-cross {
-  background-image: url("../img/close.svg"); }
+  background-image: url("../../img/close.svg"); }
   .site-menu__nav-toggle-cross:hover {
     opacity: 0.8; }
   .site-menu__nav-toggle-cross:active {
@@ -521,7 +521,7 @@ img {
   font: inherit;
   border: none;
   background-color: transparent;
-  background-image: url("../img/more.svg");
+  background-image: url("../../img/more.svg");
   background-repeat: no-repeat;
   padding: 0;
   padding-left: 30px;
@@ -532,7 +532,7 @@ img {
     margin-bottom: 0; } }
 
 .more-button--less {
-  background-image: url("../img/less.svg"); }
+  background-image: url("../../img/less.svg"); }
 
 .equipment-brand {
   margin-bottom: 25px; }
@@ -638,21 +638,21 @@ img {
   background-repeat: no-repeat;
   background-position: 15px 50%; }
   .brand-list__item--lenovo {
-    background-image: url("../img/lenovo.svg"); }
+    background-image: url("../../img/lenovo.svg"); }
   .brand-list__item--samsung {
-    background-image: url("../img/samsung.svg"); }
+    background-image: url("../../img/samsung.svg"); }
   .brand-list__item--apple {
-    background-image: url("../img/apple.svg"); }
+    background-image: url("../../img/apple.svg"); }
   .brand-list__item--viewsonic {
-    background-image: url("../img/viewsonic.svg"); }
+    background-image: url("../../img/viewsonic.svg"); }
   .brand-list__item--bosch {
-    background-image: url("../img/bosch.svg"); }
+    background-image: url("../../img/bosch.svg"); }
   .brand-list__item--hp {
-    background-image: url("../img/hp.svg"); }
+    background-image: url("../../img/hp.svg"); }
   .brand-list__item--acer {
-    background-image: url("../img/acer.svg"); }
+    background-image: url("../../img/acer.svg"); }
   .brand-list__item--sony {
-    background-image: url("../img/sony.svg"); }
+    background-image: url("../../img/sony.svg"); }
 
 @media (min-width: 768px) {
   .brand-list__item {
