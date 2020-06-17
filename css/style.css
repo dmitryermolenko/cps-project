@@ -664,7 +664,7 @@ img {
   .brand-list__item--acer {
     background-image: url("../img/acer.svg"); }
   .brand-list__item--sony {
-    background-image: url("../../img/sony.svg"); }
+    background-image: url("../img/sony.svg"); }
 
 @media (min-width: 768px) {
   .brand-list__item {
