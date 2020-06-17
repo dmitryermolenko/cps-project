@@ -301,7 +301,7 @@ img {
     display: none; } }
 
 .site-menu__nav-toggle-cross {
-  background-image: url("../../img/close.svg"); }
+  background-image: url("../img/close.svg"); }
   .site-menu__nav-toggle-cross:hover {
     opacity: 0.8; }
   .site-menu__nav-toggle-cross:active {
