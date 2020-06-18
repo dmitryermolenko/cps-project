@@ -11,25 +11,20 @@ const typeMoreButton = document.querySelector('.equipment-type__more-button');
 const textContainer = document.querySelector('.about-us__text-container');
 const brandContainer = document.querySelector('.equipment-brand__brand-list');
 const typeContainer = document.querySelector('.equipment-type__list');
-const overlays = document.querySelectorAll('.overlay');
+const overlay = document.querySelector('.overlay');
 
 
 
 openButton.addEventListener('click', () => {
   openButton.classList.add('header__nav-toggle-burger--open');
   siteMenu.classList.add('site-menu--open');
-  overlays.forEach(item =>{
-    item.classList.add('overlay--active');
-  });
-
+  overlay.classList.add('overlay--active');
 });
 
 closeButton.addEventListener('click', () => {
   openButton.classList.remove('header__nav-toggle-burger--open');
   siteMenu.classList.remove('site-menu--open');
-  overlays.forEach(item =>{
-    item.classList.remove('overlay--active');
-  });
+  overlay.classList.remove('overlay--active');
 });
 
 document.addEventListener('click', (evt) => {
@@ -39,9 +34,7 @@ document.addEventListener('click', (evt) => {
 
 
   if (!isOpenButtonClicked && (!isMenuClicked)) {
-    overlays.forEach(item =>{
-      item.classList.remove('overlay--active');
-    });
+    overlay.classList.remove('overlay--active');
     openButton.classList.remove('header__nav-toggle-burger--open');
     siteMenu.classList.remove('site-menu--open');
   }

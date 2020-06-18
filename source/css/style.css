@@ -36,11 +36,18 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.overlay {
+  display: none; }
+
 .overlay--active {
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  transition: all 3s; }
+  z-index: 2; }
 
 @media (min-width: 1336px) {
   .page-wrapper {
@@ -84,7 +91,7 @@ img {
 
 .header__nav-toggle-burger {
   margin-top: 3px;
-  background-image: url("../../img/burger.svg"); }
+  background-image: url("../img/burger.svg"); }
   .header__nav-toggle-burger:hover {
     opacity: 0.8; }
   .header__nav-toggle-burger:active {
@@ -228,8 +235,9 @@ img {
 
 .site-menu {
   position: absolute;
-  top: 0;
+  top: -90px;
   left: -320px;
+  bottom: 0;
   width: 320px;
   box-sizing: border-box;
   display: flex;
@@ -242,11 +250,12 @@ img {
 @media (min-width: 1336px) {
   .site-menu {
     position: relative;
-    display: block;
+    display: flex;
+    top: 0;
     left: 0;
     box-sizing: border-box;
     width: 320px;
-    padding: 35px 25px 0 25px;
+    padding: 35px 25px 25px;
     background-color: #ffffff;
     transition: none; } }
 
@@ -289,7 +298,7 @@ img {
     display: none; } }
 
 .site-menu__nav-toggle-cross {
-  background-image: url("../../img/close.svg"); }
+  background-image: url("../img/close.svg"); }
   .site-menu__nav-toggle-cross:hover {
     opacity: 0.8; }
   .site-menu__nav-toggle-cross:active {
@@ -313,7 +322,7 @@ img {
   margin-right: 15px; }
 
 .site-menu__bottom-wrapper {
-  margin-top: 100%; }
+  margin-top: auto; }
 
 .site-menu__email {
   margin: 0;
@@ -362,7 +371,8 @@ img {
 
 .main {
   display: flex;
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  position: relative; }
 
 .main__content-wrapper {
   width: 100%;
@@ -375,7 +385,7 @@ img {
 
 @media (min-width: 1336px) {
   .main__content-wrapper {
-    width: 1006px; } }
+    width: 1020px; } }
 
 .main__header {
   width: 100%;
@@ -417,7 +427,7 @@ img {
 
 @media (min-width: 1336px) {
   .services__wrapper {
-    width: 1046px;
+    width: 1006px;
     padding-right: 35px;
     padding-left: 35px;
     margin-bottom: 19px; } }
@@ -465,7 +475,7 @@ img {
 
 @media (min-width: 1336px) {
   .about-us__wrapper {
-    width: 1046px;
+    width: 1006px;
     padding-right: 35px;
     padding-left: 35px; } }
 
@@ -521,7 +531,7 @@ img {
   font: inherit;
   border: none;
   background-color: transparent;
-  background-image: url("../../img/more.svg");
+  background-image: url("../img/more.svg");
   background-repeat: no-repeat;
   padding: 0;
   padding-left: 30px;
@@ -532,7 +542,7 @@ img {
     margin-bottom: 0; } }
 
 .more-button--less {
-  background-image: url("../../img/less.svg"); }
+  background-image: url("../img/less.svg"); }
 
 .equipment-brand {
   margin-bottom: 25px; }
@@ -638,21 +648,21 @@ img {
   background-repeat: no-repeat;
   background-position: 15px 50%; }
   .brand-list__item--lenovo {
-    background-image: url("../../img/lenovo.svg"); }
+    background-image: url("../img/lenovo.svg"); }
   .brand-list__item--samsung {
-    background-image: url("../../img/samsung.svg"); }
+    background-image: url("../img/samsung.svg"); }
   .brand-list__item--apple {
-    background-image: url("../../img/apple.svg"); }
+    background-image: url("../img/apple.svg"); }
   .brand-list__item--viewsonic {
-    background-image: url("../../img/viewsonic.svg"); }
+    background-image: url("../img/viewsonic.svg"); }
   .brand-list__item--bosch {
-    background-image: url("../../img/bosch.svg"); }
+    background-image: url("../img/bosch.svg"); }
   .brand-list__item--hp {
-    background-image: url("../../img/hp.svg"); }
+    background-image: url("../img/hp.svg"); }
   .brand-list__item--acer {
-    background-image: url("../../img/acer.svg"); }
+    background-image: url("../img/acer.svg"); }
   .brand-list__item--sony {
-    background-image: url("../../img/sony.svg"); }
+    background-image: url("../img/sony.svg"); }
 
 @media (min-width: 768px) {
   .brand-list__item {

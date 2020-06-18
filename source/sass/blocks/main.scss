@@ -1,6 +1,7 @@
 .main {
   display: flex;
   background-color: $main-bg;
+  position: relative;
 }
 
 .main__content-wrapper {
@@ -17,7 +18,7 @@
 
 @media(min-width: $desktop-width) {
   .main__content-wrapper {
-    width: 1006px;
+    width: 1020px;
   }
 }
 
