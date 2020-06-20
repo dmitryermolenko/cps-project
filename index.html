@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS - сервисный центр по ремонту техники</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -254,94 +255,103 @@
     </div>
     </section>
 
-    <section class="equipment-brand slider">
+    <section class="equipment-brand">
       <div class="equipment-brand__wrapper">
         <h2 class="visually-hidden">Бренды, с которыми работает компания</h2>
         <p class="equipment-brand__title">Ремонт техники различных брендов</p>
-        <input class="visually-hidden" type="radio" id="brand-1" name="toggle" checked="">
-        <input class="visually-hidden" type="radio" id="brand-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="brand-3" name="toggle">
-        <input class="visually-hidden" type="radio" id="brand-4" name="toggle">
-        <input class="visually-hidden" type="radio" id="brand-5" name="toggle">
-        <input class="visually-hidden" type="radio" id="brand-6" name="toggle">
-        <input class="visually-hidden" type="radio" id="brand-7" name="toggle">
-        <input class="visually-hidden" type="radio" id="brand-8" name="toggle">
 
-        <div class="slider__wrapper">
-          <ul class="equipment-brand__brand-list brand-list slider__slider-list">
-            <li class="brand-list__item brand-list__item--lenovo slider-list__item" id="slide1">
-              <a class="brand-list__link" href="#">
-                <span class="visually-hidden">Сссылка на сайт компании «Леново»</span>
-              </a>
-            </li>
-            <li class="brand-list__item brand-list__item--samsung slider-list__item" id="slide2">
-              <a class="brand-list__link" href="#">
-                <span class="visually-hidden">Сссылка на сайт компании «Самсунг»</span>
-              </a>
-            </li>
-        <li class="brand-list__item brand-list__item--apple slider-list__item" id="slide3">
-              <a class="brand-list__link" href="#">
-                <span class="visually-hidden">Сссылка на сайт компании «Эппл»</span>
-              </a>
-            </li>
-            <li class="brand-list__item brand-list__item--viewsonic slider-list__item" id="slide4">
-              <a class="brand-list__link" href="#">
-                <span class="visually-hidden">Сссылка на сайт компании «Вью Соник»</span>
-              </a>
-            </li>
-            <li class="brand-list__item brand-list__item--bosch slider-list__item" id="slide5">
-              <a class="brand-list__link" href="#">
-                <span class="visually-hidden">Сссылка на сайт компании «Бош»</span>
-              </a>
-            </li>
-            <li class="brand-list__item brand-list__item--hp slider-list__item" id="slide6">
-              <a class="brand-list__link" href="#">
-                <span class="visually-hidden">Сссылка на сайт компании «Эйч Пи»</span>
-              </a>
-            </li>
-            <li class="brand-list__item brand-list__item--acer slider-list__item" id="slide7">
-              <a class="brand-list__link" href="#">
-                <span class="visually-hidden">Сссылка на сайт компании «Асер»</span>
-              </a>
-            </li>
-            <li class="brand-list__item brand-list__item--sony slider-list__item" id="slide8">
-              <a class="brand-list__link" href="#">
-                <span class="visually-hidden">Сссылка на сайт компании «Сони»</span>
-              </a>
-            </li>
-          </ul>
-      </div>
-
-    <div class="slider__controls">
-      <label class="slider__controls-label" for="brand-1"><span class="visually-hidden
-        ">Первый</span>
-      </label>
-      <label class="slider__controls-label" for="brand-2">
-        <span class="visually-hidden">Второй</span>
-      </label>
-      <label class="slider__controls-label" for="brand-3">
-        <span class="visually-hidden">Третий</span>
-      </label>
-      <label class="slider__controls-label" for="brand-4">
-        <span class="visually-hidden">Четвертый</span>
-      </label>
-      <label class="slider__controls-label" for="brand-5">
-        <span class="visually-hidden">Пятый</span>
-      </label>
-      <label class="slider__controls-label" for="brand-6">
-        <span class="visually-hidden">Шестой</span>
-      </label>
-      <label class="slider__controls-label" for="brand-7">
-        <span class="visually-hidden">Седьмой</span>
-      </label>
-      <label class="slider__controls-label" for="brand-8">
-        <span class="visually-hidden">Восьмой</span>
-      </label>
-    </div>
-
+        <ul class="equipment-brand__brand-list brand-list">
+          <li class="brand-list__item brand-list__item--lenovo">
+            <a class="brand-list__link" href="#">
+              <span class="visually-hidden">Сссылка на сайт компании «Леново»</span>
+            </a>
+          </li>
+          <li class="brand-list__item brand-list__item--samsung">
+            <a class="brand-list__link" href="#">
+              <span class="visually-hidden">Сссылка на сайт компании «Самсунг»</span>
+            </a>
+          </li>
+      <li class="brand-list__item brand-list__item--apple">
+            <a class="brand-list__link" href="#">
+              <span class="visually-hidden">Сссылка на сайт компании «Эппл»</span>
+            </a>
+          </li>
+          <li class="brand-list__item brand-list__item--viewsonic">
+            <a class="brand-list__link" href="#">
+              <span class="visually-hidden">Сссылка на сайт компании «Вью Соник»</span>
+            </a>
+          </li>
+          <li class="brand-list__item brand-list__item--bosch">
+            <a class="brand-list__link" href="#">
+              <span class="visually-hidden">Сссылка на сайт компании «Бош»</span>
+            </a>
+          </li>
+          <li class="brand-list__item brand-list__item--hp">
+            <a class="brand-list__link" href="#">
+              <span class="visually-hidden">Сссылка на сайт компании «Эйч Пи»</span>
+            </a>
+          </li>
+          <li class="brand-list__item brand-list__item--acer">
+            <a class="brand-list__link" href="#">
+              <span class="visually-hidden">Сссылка на сайт компании «Асер»</span>
+            </a>
+          </li>
+          <li class="brand-list__item brand-list__item--sony">
+            <a class="brand-list__link" href="#">
+              <span class="visually-hidden">Сссылка на сайт компании «Сони»</span>
+            </a>
+          </li>
+        </ul>
       <button class="equipment-brand__more-button more-button" type="button">
         Показать все
       </button>
+
+      <div class="swiper-container swiper-container--brand">
+        <div class="swiper-wrapper swiper-wrapper--brand">
+          <div class="swiper-slide swiper-slide--brand">
+            <a class="swiper-slide__link swiper-slide__link--brand" href="#">
+              <img src="./img/lenovo.svg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide swiper-slide--brand">
+            <a class="swiper-slide__link swiper-slide__link--brand" href="#">
+              <img src="./img/samsung.svg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide swiper-slide--brand">
+            <a class="swiper-slide__link swiper-slide__link--brand " href="#">
+              <img src="./img/apple.svg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide swiper-slide--brand">
+            <a class="swiper-slide__link swiper-slide__link--brand" href="#">
+              <img src="./img/viewsonic.svg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide swiper-slide--brand">
+            <a class="swiper-slide__link swiper-slide__link--brand" href="#">
+              <img src="./img/bosch.svg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide swiper-slide--brand">
+            <a class="swiper-slide__link swiper-slide__link--brand" href="#">
+              <img src="./img/hp.svg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide swiper-slide--brand">
+            <a class="swiper-slide__link swiper-slide__link--brand" href="#">
+              <img src="./img/acer.svg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide swiper-slide--brand">
+            <a class="swiper-slide__link swiper-slide__link--brand" href="#">
+              <img src="./img/sony.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination swiper-pagination--brand"></div>
+    </div>
+
     </div>
     </section>
 
@@ -349,45 +359,42 @@
       <div class="equipment-type__wrapper">
         <h2 class="visually-hidden">Виды техники, с которыми работает компания</h2>
         <p class="equipment-type__title">Ремонт различных видов техники</p>
-        <input class="visually-hidden" type="radio" id="type-1" name="toggle" checked="">
-        <input class="visually-hidden" type="radio" id="type-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="type-3" name="toggle">
-        <input class="visually-hidden" type="radio" id="type-4" name="toggle">
 
-        <div class="slider__wrapper">
-        <ul class="equipment-type__list type-list slider__slider-list">
-          <li class="type-list__item slider-list__item">
+        <ul class="equipment-type__list type-list">
+          <li class="type-list__item">
             <p class="type-list__item-title">Ремонт ноутбуков</p>
             <a class="type-list__link" href="#" aria-label="Ремонт ноутбуков"></a>
           </li>
-          <li class="type-list__item slider-list__item">
+          <li class="type-list__item">
             <p class="type-list__item-title">Ремонт планшетов</p>
             <a class="type-list__link" href="#" aria-label="Ремонт планшетов"></a>
           </li>
-          <li class="type-list__item slider-list__item">
+          <li class="type-list__item">
             <p class="type-list__item-title">Ремонт ПК</p>
             <a class="type-list__link" href="#" aria-label="Ремонт ПК"></a>
           </li>
-          <li class="type-list__item slider-list__item">
+          <li class="type-list__item">
             <p class="type-list__item-title">Ремонт мониторов</p>
             <a class="type-list__link" href="#" aria-label="Ремонт мониторов"></a>
           </li>
         </ul>
-      </div>
 
-        <div class="slider__controls">
-          <label class="slider__controls-label" for="type-1"><span class="visually-hidden
-            ">Первый</span>
-          </label>
-          <label class="slider__controls-label" for="type-2">
-            <span class="visually-hidden">Второй</span>
-          </label>
-          <label class="slider__controls-label" for="type-3">
-            <span class="visually-hidden">Третий</span>
-          </label>
-          <label class="slider__controls-label" for="type-4">
-            <span class="visually-hidden">Четвертый</span>
-          </label>
+        <div class="swiper-container swiper-container--type">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--type">
+              <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт ноутбуков</a>
+            </div>
+            <div class="swiper-slide swiper-slide--type">
+              <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт планшетов</a>
+            </div>
+            <div class="swiper-slide swiper-slide--type">
+              <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт ПК</a>
+            </div>
+            <div class="swiper-slide swiper-slide--type">
+              <a class="swiper-slide__link swiper-slide__link--type" href="#">Ремонт мониторов</a>
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination--type"></div>
         </div>
         <button class="equipment-type__more-button more-button" type="button">
           Показать все
@@ -399,5 +406,7 @@
   </main>
 </div>
 <script src="js/script.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/slider.js"></script>
 </body>
 </html>
