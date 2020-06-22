@@ -1,3 +1,7 @@
+.type-list {
+  list-style: none;
+}
+
 .type-list__item {
   width: 238px;
   height: 158px;
@@ -18,12 +22,32 @@
   }
 }
 
+@media(min-width: 712px) {
+  .type-list__item:nth-child(3) {
+    margin-right: 0;
+  }
+}
+
+@media(min-width: 956px) {
+  .type-list__item:nth-child(3) {
+    margin-right: 20px;
+  }
+
+  .type-list__item:nth-child(4) {
+    margin-right: 0;
+  }
+}
+
 @media(min-width: $desktop-width) {
   .type-list__item {
     margin-right: 17px;
   }
 
-  .type-list__item:nth-child(4n) {
+  .type-list__item:nth-child(3) {
+    margin-right: 17px;
+   }
+
+  .type-list__item:nth-child(4) {
     margin-right: 0;
    }
   }

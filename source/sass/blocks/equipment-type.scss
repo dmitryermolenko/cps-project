@@ -25,10 +25,7 @@
 }
 
 .equipment-type__list {
-  margin: 0;
-  padding: 0;
-  width: 1005px;
-  list-style: none;
+  display: none;
 }
 
 @media(min-width: $tablet-width) {
@@ -39,6 +36,8 @@
     box-sizing: border-box;
     height: 164px;
     margin: 0 auto;
+    overflow-y: hidden;
+    padding-left: 0;
   }
 
   .equipment-type__list--full {
