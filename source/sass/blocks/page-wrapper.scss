@@ -1,7 +1,14 @@
+.page-wrapper {
+  position: relative;
+}
+
 @media (min-width: $desktop-width) {
   .page-wrapper {
     display: flex;
     width: $desktop-width;
+    box-sizing: border-box;
     margin: 0 auto;
+    flex-wrap: wrap;
+    padding-left: 320px;
   }
 }

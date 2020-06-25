@@ -1,0 +1,37 @@
+.table {
+  width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  border-collapse: collapse;
+}
+
+.table__data {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  border-bottom: 2px solid #EAEAEA;
+  background-color: #ffffff;
+
+  &--order {
+    padding-right: 130px;
+  }
+}
+
+.table__header {
+
+  padding:15px 0 15px 15px;
+  line-height: 16px;
+  font-weight: normal;
+  text-align: left;
+  color: #7E7E82;
+  opacity: 0.7;
+}
+
+.table__button {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -16px;
+}
+

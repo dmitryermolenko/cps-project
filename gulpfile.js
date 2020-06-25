@@ -20,7 +20,7 @@ gulp.task("css", function () {
       autoprefixer()
     ]))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
 
@@ -52,7 +52,8 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**"
+    "source/js/**",
+    "source/css/swiper.min.css"
     ], {
       base: "source"
     })
@@ -64,5 +65,6 @@ gulp.task('deploy', function() {
     .pipe(ghPages());
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "html"));
+/*gulp.task("build", gulp.series("clean", "copy", "css", "html"));*/
+gulp.task("build", gulp.series("css"));
 gulp.task("start", gulp.series("build", "server"));

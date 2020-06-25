@@ -1,6 +1,6 @@
 .site-menu {
   position: absolute;
-  top: -90px;
+  top: 0;
   left: -320px;
   bottom: 0;
   width: 320px;
@@ -16,7 +16,6 @@
 
 @media(min-width: $desktop-width) {
   .site-menu {
-    position: relative;
     display: flex;
     top: 0;
     left: 0;
@@ -74,23 +73,13 @@
   }
 }
 
+
 @media(min-width: $desktop-width) {
   .site-menu__nav-toggle-cross {
     display: none;
   }
 }
 
-.site-menu__nav-toggle-cross {
-  background-image: url('../img/close.svg');
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
-}
 
 @media(min-width: $desktop-width) {
   .site-menu__search-button {

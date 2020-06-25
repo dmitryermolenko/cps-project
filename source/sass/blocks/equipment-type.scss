@@ -30,9 +30,9 @@
 
 @media(min-width: $tablet-width) {
   .equipment-type__list {
-    display: flex;
-    flex-wrap: wrap;
-    width: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    row-gap: 15px;
     box-sizing: border-box;
     height: 164px;
     margin: 0 auto;

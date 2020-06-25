@@ -1,8 +1,14 @@
 const openButton = document.querySelector('.header__nav-toggle-burger');
 const closeButton = document.querySelector('.site-menu__nav-toggle-cross');
+const closeFeedbackButton = document.querySelector('.feedback__button-cross');
+const closeCallButton = document.querySelector('.call__button-cross');
+const contactButtons = document.querySelectorAll('.contact-list__link--message');
+const callButtons = document.querySelectorAll('.contact-list__link--phone');
 const header = document.querySelector('.header');
 const main = document.querySelector('.main__content-wrapper');
 const siteMenu = document.querySelector('.site-menu');
+const feedback = document.querySelector('.feedback');
+const call = document.querySelector('.call');
 const navigationLinks = document.querySelectorAll('.navigation__link');
 const pageNavigationLinks = document.querySelectorAll('.page-navigation__link');
 const aboutMoreButton = document.querySelector('.about-us__more-button');
@@ -26,6 +32,35 @@ closeButton.addEventListener('click', () => {
   siteMenu.classList.remove('site-menu--open');
   overlay.classList.remove('overlay--active');
 });
+
+closeFeedbackButton.addEventListener('click', () => {
+  feedback.classList.remove('feedback--open');
+  closeFeedbackButton.classList.remove('feedback__button-cross--open');
+  /*overlay.classList.remove('overlay--active');*/
+});
+
+contactButtons.forEach(item => {
+  item.addEventListener('click', () => {
+    feedback.classList.add('feedback--open');
+    closeFeedbackButton.classList.add('feedback__button-cross--open');
+    /*overlay.classList.add('overlay--active');*/
+  });
+});
+
+closeCallButton.addEventListener('click', () => {
+  call.classList.remove('call--open');
+  closeCallButton.classList.remove('call__button-cross--open');
+  /*overlay.classList.remove('overlay--active');*/
+});
+
+callButtons.forEach(item => {
+  item.addEventListener('click', () => {
+    call.classList.add('call--open');
+    closeCallButton.classList.add('call__button-cross--open');
+    /*overlay.classList.add('overlay--active');*/
+  });
+});
+
 
 document.addEventListener('click', (evt) => {
   const target = evt.target;

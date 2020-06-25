@@ -5,6 +5,49 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.button--cross {
+  background-image: url('../img/close.svg');
+}
+
+.button--order {
+  position: relative;
+  width: 119px;
+  height: 32px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font: inherit;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: left;
+  text-transform: uppercase;
+  background-color: #FF3E79;
+  border-radius: 16px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 10px;
+    right: 15px;
+    width: 8px;
+    height: 8px;
+    border: 3px solid #ffffff;
+    border-bottom: none;
+    border-left: none;
+    border-radius: 2px;
+    transform: rotate(45deg);
+  }
 }
 
 .button__icon,
