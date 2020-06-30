@@ -20,46 +20,93 @@ const brandMoreButton = document.querySelector(".equipment-brand__more-button");
 const typeMoreButton = document.querySelector(".equipment-type__more-button");
 const textContainer = document.querySelector(".about-us__text-container");
 const brandContainer = document.querySelector(".equipment-brand__brand-list");
-const typeContainer = document.querySelector(".equipment-type__list");
+const typeContainer = document.querySelector(".swiper-wrapper--type");
 const overlay = document.querySelector(".overlay");
+
+const onOverlayClick = () => {
+  overlay.classList.remove("overlay--active");
+  switch (true) {
+    case siteMenu.classList.contains("site-menu--open"):
+      openButton.classList.remove("header__nav-toggle-burger--open");
+      siteMenu.classList.remove("site-menu--open");
+      break;
+
+    case feedback.classList.contains("feedback--open"):
+      feedback.classList.remove("feedback--open");
+      closeFeedbackButton.classList.remove("feedback__button-cross--open");
+      break;
+
+    case call.classList.contains("call--open"):
+      call.classList.remove("call--open");
+      closeCallButton.classList.remove("call__button-cross--open");
+      break;
+  }
+};
 
 openButton.addEventListener("click", () => {
   openButton.classList.add("header__nav-toggle-burger--open");
   siteMenu.classList.add("site-menu--open");
   overlay.classList.add("overlay--active");
+
+  overlay.addEventListener("click", (evt) => {
+    onOverlayClick(evt);
+  });
 });
 
 closeButton.addEventListener("click", () => {
   openButton.classList.remove("header__nav-toggle-burger--open");
   siteMenu.classList.remove("site-menu--open");
   overlay.classList.remove("overlay--active");
+
+  document.removeEventListener("click", onOverlayClick);
 });
 
 closeFeedbackButton.addEventListener("click", () => {
   feedback.classList.remove("feedback--open");
   closeFeedbackButton.classList.remove("feedback__button-cross--open");
+  overlay.classList.remove("overlay--active");
+  document.removeEventListener("click", onOverlayClick);
 });
 
 contactButtons.forEach((item) => {
   item.addEventListener("click", () => {
     feedback.classList.add("feedback--open");
     closeFeedbackButton.classList.add("feedback__button-cross--open");
+    overlay.classList.add("overlay--active");
+
+    if (siteMenu.classList.contains("site-menu--open")) {
+      siteMenu.classList.remove("site-menu--open");
+    }
+    overlay.addEventListener("click", (evt) => {
+      onOverlayClick(evt);
+    });
   });
 });
 
 closeCallButton.addEventListener("click", () => {
   call.classList.remove("call--open");
   closeCallButton.classList.remove("call__button-cross--open");
+  overlay.classList.remove("overlay--active");
+  document.removeEventListener("click", onOverlayClick);
 });
 
 callButtons.forEach((item) => {
   item.addEventListener("click", () => {
     call.classList.add("call--open");
     closeCallButton.classList.add("call__button-cross--open");
+    overlay.classList.add("overlay--active");
+
+    if (siteMenu.classList.contains("site-menu--open")) {
+      siteMenu.classList.remove("site-menu--open");
+    }
+
+    overlay.addEventListener("click", (evt) => {
+      onOverlayClick(evt);
+    });
   });
 });
 
-document.addEventListener("click", (evt) => {
+/*document.addEventListener("click", (evt) => {
   const target = evt.target;
   const isMenuClicked = target == siteMenu || siteMenu.contains(target);
   const isOpenButtonClicked = target == openButton;
@@ -69,7 +116,7 @@ document.addEventListener("click", (evt) => {
     openButton.classList.remove("header__nav-toggle-burger--open");
     siteMenu.classList.remove("site-menu--open");
   }
-});
+});*/
 
 window.addEventListener("resize", () => {
   if (window.matchMedia("(min-width: 1336px)").matches) {
@@ -129,10 +176,10 @@ typeMoreButton.addEventListener("click", () => {
   if (typeMoreButton.innerText === "Показать все") {
     typeMoreButton.innerText = "Скрыть";
     typeMoreButton.classList.add("more-button--less");
-    typeContainer.classList.add("equipment-type__list--full");
+    typeContainer.classList.add("swiper-wrapper--full");
   } else {
     typeMoreButton.innerText = "Показать все";
     typeMoreButton.classList.remove("more-button--less");
-    typeContainer.classList.remove("equipment-type__list--full");
+    typeContainer.classList.remove("swiper-wrapper--full");
   }
 });
